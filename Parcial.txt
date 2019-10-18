@@ -1,0 +1,13 @@
+
+package parcial;
+
+//Luis Mojica
+public class Parcial {
+
+  
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Operaciones instancia1 = new Operaciones();
+    }
+    
+}

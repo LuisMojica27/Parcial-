@@ -1,0 +1,29 @@
+
+package parcial;
+
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.format.DateTimeFormatter;
+
+/**
+ *
+ * Luis Mojica
+ */
+public class Persona {
+    public String  Nombre, Apellido, Direccion, FechaNacimiento, Telefono;
+    Persona(String Nom, String Ape, String Direc, String Fec, String Tel){
+    
+        this.Nombre = Nom;
+        this.Apellido = Ape;
+        this.Direccion = Direc;
+        this.FechaNacimiento = Fec;
+        this.Telefono = Tel;
+       // this.calcuEdad();
+    }
+    public void calcuEdad() {
+        DateTimeFormatter fmt = DateTimeFormatter.ofPattern ("dd/MM/yyyy");
+        LocalDate dob = LocalDate.parse(this.FechaNacimiento, fmt);
+        LocalDate NowDate = LocalDate.now();
+        Period period = Period.between(dob, NowDate);
+    }
+}

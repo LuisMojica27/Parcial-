@@ -1,0 +1,56 @@
+package parcial;
+
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+public final class Operaciones{
+Scanner lectura = new Scanner (System.in);
+    public Persona persona1[] = new Persona[5];
+    private Object J0ptionPane;
+    Persona arrayObjetos[] = new Persona[5];
+//Constructor
+
+    public Operaciones() {
+        this.arreglo();
+    }
+
+    //Menu
+    public void menu() {
+
+        System.out.println("Bienvenido");
+
+    }
+
+    public void arreglo() {
+        //Array
+
+        //Cinco empleados
+        for (int i = 0; i < 5; i++) {
+            //Parametros
+            String Nombre = JOptionPane.showInputDialog("Ingrese  Nombre");
+            String Apellido = JOptionPane.showInputDialog("Ingrese  Apellido");
+            String Telefono = JOptionPane.showInputDialog("Ingrese telefono");
+            String Direccion = JOptionPane.showInputDialog("Ingrese Direccion");
+            String FechaNacimiento = JOptionPane.showInputDialog("Ingrese Fecha Nacimiento");
+            //String CalcuEdad = lectura.nextLine();
+           
+
+            for (int j = 0; j < 5; j++) {
+               // System.out.println("Base de datos");
+                System.out.println("Nombre: "+Nombre);
+                System.out.println(" ");
+                System.out.println("Apellido: "+Apellido);
+                System.out.println(" ");
+                System.out.println("Telefono: "+Telefono);
+                System.out.println(" ");
+                System.out.println("Dirección: "+Direccion);
+                System.out.println(" ");
+                System.out.println("Fecha de nacimiento: "+FechaNacimiento);
+               // System.out.println("La edad es "+CalcuEdad);
+                System.out.println("------------------------------------------");
+                
+            }
+        }  
+     }
+
+}
